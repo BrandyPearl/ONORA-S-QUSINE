@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffa07a;
+    color: #333;
+}
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    padding: 10px;
+}
+.menu-container{
+        max-width: 800px;
+        margin-left: 10px;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+        background: color #f5f5dc;
+    }
+.menu-grid{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+}
+.menu-card{
+    background-color: #fff599;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    text-align: center;
+}
+.menu-card h3{
+font-size: 1.5em;
+margin: 10px 0;
+}
+.menu-card p{
+    font-size: 1em;
+    margin: 2px 0;
+}
+.menu-card.price{
+    font-weight: bold;
+    color:#ffffff;
+}
+.menu-image{
+    width: 100%;
+    height:auto;
+    border-bottom: 1px solid #ddd;
+    position: center;
+}
+.order-button{
+    background-color: #ffa07a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-button:hover{
+    background-color: #ff5722;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+</head>
+<body>
+<style>
+    .booking-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffa07a;
+    }
+
+    .booking-container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-row .form-group {
+        flex: 1;
+    }
+
+    .submit-btn {
+        background-color: rgb(93, 221, 93);
+        color: white;
+        border: 2px solid #1a1918;
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 30%;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .submit-btn:hover {
+        color: #1a1918;
+        background-color: white;
+        border: 2px solid #ff9900;
+    }
+
+    .special-requests {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        height: 100px;
+        resize: vertical;
+    }
+</style>
+
+<div class="booking-container">
+    <h2>Make a Reservation</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="">Select number of guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7+">7+ People</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="seating">Seating Preference</label>
+                <select id="seating" name="seating">
+                    <option value="">Select seating preference</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="bar">Bar</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="special-requests">Special Requests (Optional)</label>
+            <textarea id="special-requests" name="special-requests" class="special-requests"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Book Table</button>
+    </form>
+</div>
+</body>
+</html>

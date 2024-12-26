@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinks</title>
+</head>
+<body>
+<style>
+    .drinks-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #c5ebd4;
+    }
+
+    .drinks-container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+
+    .drinks-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .drink-card {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .drink-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .drink-description {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .drink-price {
+        color: #ff9900;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .order-btn {
+        background-color: rgb(93, 221, 93);
+        color: white;
+        border: 2px solid #1a1918;
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        float: right;
+    }
+
+    .order-btn:hover {
+        color: #1a1918;
+        background-color: white;
+        border: 2px solid #ff9900;
+    }
+</style>
+
+<div class="drinks-container">
+    <h2>Our Beverages</h2>
+    
+    <div class="drinks-grid">
+        <div class="drink-card">
+            <div class="drink-name">Bissap (Hibiscus Tea)</div>
+            <div class="drink-description">Traditional African hibiscus drink, naturally sweetened with hints of mint and ginger</div>
+            <div class="drink-price">$4.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <div class="drink-card">
+            <div class="drink-name">Ginger Beer</div>
+            <div class="drink-description">Homemade spicy ginger beer with a perfect balance of sweetness and heat</div>
+            <div class="drink-price">$4.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <div class="drink-card">
+            <div class="drink-name">Palm Wine</div>
+            <div class="drink-description">Traditional fermented palm sap beverage, naturally sweet with a mild alcohol content</div>
+            <div class="drink-price">$6.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <div class="drink-card">
+            <div class="drink-name">Zobo</div>
+            <div class="drink-description">Refreshing Nigerian drink made from dried roselle leaves with natural spices</div>
+            <div class="drink-price">$4.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <div class="drink-card">
+            <div class="drink-name">African Coffee</div>
+            <div class="drink-description">Rich and aromatic coffee made from freshly ground African coffee beans</div>
+            <div class="drink-price">$3.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+
+        <div class="drink-card">
+            <div class="drink-name">Bouyi</div>
+            <div class="drink-description">Sweet and refreshing baobab fruit drink with a subtle tangy flavor</div>
+            <div class="drink-price">$5.99</div>
+            <button class="order-btn">Order</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

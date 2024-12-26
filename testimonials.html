@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+</head>
+<body>
+<style>
+    .testimonials-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffa07a;
+    }
+
+    .testimonials-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .testimonial-card {
+        background:  #fff599;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-content {
+        font-size: 16px;
+        color: black;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .testimonial-author {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .testimonial-date {
+        font-size: 14px;
+        color: #888;
+    }
+
+    .write-testimonial {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        background: #fff599;
+        border-radius: 10px;
+    }
+
+    .write-testimonial h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .testimonial-form textarea {
+        width: 100%;
+        height: 150px;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: vertical;
+    }
+
+    .testimonial-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .submit-btn {
+        background-color: #ffa07a;
+        color: white;
+        border: 2px solid #1a1918;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 20%;
+        transition: 0.3s;
+        position:relative;
+    }
+
+    .submit-btn:hover {
+        color: #1a1918;
+        background-color:#ffa07a;
+        border: 2px solid white;
+    }
+</style>
+
+<div class="testimonials-container">
+    <div class="testimonials-header">
+        <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p class="testimonial-content">"The Jellof Rice here is absolutely incredible! The flavors are authentic and remind me of my grandmother's cooking. This has become my go-to spot for African cuisine."</p>
+            <p class="testimonial-author">- Sarah Johnson</p>
+            <p class="testimonial-date">October 15, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"I tried the Eru for the first time and was blown away! The staff took time to explain the dish and its origins. Such a wonderful cultural experience."</p>
+            <p class="testimonial-author">- Michael Chen</p>
+            <p class="testimonial-date">October 12, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"The Mbanga Soup is a must-try! The palm nut flavor is perfectly balanced. This restaurant truly captures the essence of African cuisine."</p>
+            <p class="testimonial-author">- Lisa Williams</p>
+            <p class="testimonial-date">October 8, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"Outstanding service and ambiance! The Crispy Chicken was cooked to perfection. Will definitely be coming back with friends."</p>
+            <p class="testimonial-author">- James Rodriguez</p>
+            <p class="testimonial-date">October 5, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"The Nguwa Mbongo Tchobi is simply divine! Such complex flavors and the portion size is generous. This place is a hidden gem!"</p>
+            <p class="testimonial-author">- Emma Thompson</p>
+            <p class="testimonial-date">September 30, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"First time trying Cassoulet here and it exceeded my expectations. The blend of spices is perfect. Highly recommend!"</p>
+            <p class="testimonial-author">- David Kim</p>
+            <p class="testimonial-date">September 28, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"The Sauteed Bitterleaf is exactly how my mother used to make it. It's rare to find such authentic flavors outside of Africa."</p>
+            <p class="testimonial-author">- Grace Okonjo</p>
+            <p class="testimonial-date">September 25, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"Amazing atmosphere and even better food! The traditional dishes are prepared with such care and attention to detail."</p>
+            <p class="testimonial-author">- Thomas Anderson</p>
+            <p class="testimonial-date">September 20, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"The variety of dishes is impressive. Each visit I try something new and I'm never disappointed. A true culinary adventure!"</p>
+            <p class="testimonial-author">- Maria Garcia</p>
+            <p class="testimonial-date">September 15, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"Best African restaurant in the city! The flavors are bold and authentic. The staff is incredibly friendly and knowledgeable."</p>
+            <p class="testimonial-author">- Robert Wilson</p>
+            <p class="testimonial-date">September 10, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"Love the warm and welcoming atmosphere. It feels like dining at a friend's home. The food is consistently excellent!"</p>
+            <p class="testimonial-author">- Patricia Lee</p>
+            <p class="testimonial-date">September 5, 2023</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-content">"Every dish tells a story of tradition and culture. The attention to authentic ingredients and preparation methods is remarkable."</p>
+            <p class="testimonial-author">- Daniel Martinez</p>
+            <p class="testimonial-date">September 1, 2023</p>
+        </div>
+    </div>
+
+    <div class="write-testimonial">
+        <h3>Share Your Experience</h3>
+        <form class="testimonial-form" action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Write your testimonial here..." required></textarea>
+            <button type="submit" class="submit-btn">Share</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
